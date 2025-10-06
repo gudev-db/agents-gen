@@ -1,8 +1,8 @@
 import streamlit as st
-from auth.authentication import login, check_admin_password
-from database.mongodb import get_db_connection
-from ui.tabs_manager import setup_interface
-from utils.config import configure_gemini
+from auth import login, check_admin_password
+from database import get_db_connection
+from utils import configure_gemini, get_gemini_models
+from ui import setup_interface
 
 # Configuração inicial
 st.set_page_config(
