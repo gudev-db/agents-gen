@@ -1,6 +1,7 @@
 import streamlit as st
-from agents.crud import listar_agentes, salvar_conversa
+from agents.crud import listar_agentes
 from agents.inheritance import obter_agente_com_heranca
+from agents.conversation import salvar_conversa
 from processing.context_builder import construir_contexto
 from utils.config import get_gemini_models
 
